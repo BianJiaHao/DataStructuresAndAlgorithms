@@ -3,7 +3,7 @@ package com.obito.systemclass.class03;
 /**
  * @author Obito
  */
-public class ReverseBothWayList {
+public class Code02_ReverseBothWayList {
 
     public static class Node {
         private int value;

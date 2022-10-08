@@ -3,7 +3,7 @@ package com.obito.systemclass.class03;
 /**
  * @author obito
  */
-public class DeletesSpecifiedElement {
+public class Code03_DeletesSpecifiedElement {
 
     public static class Node {
 

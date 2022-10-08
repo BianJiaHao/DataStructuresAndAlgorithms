@@ -3,7 +3,7 @@ package com.obito.systemclass.class01;
 /**
  * @author obito
  */
-public class InsertSort {
+public class Code03_InsertSort {
 
     public static void insertSort(int[] arr) {
         if (arr == null || arr.length < 2) {

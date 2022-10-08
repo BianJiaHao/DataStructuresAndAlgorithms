@@ -7,7 +7,7 @@ import java.util.Set;
 /**
  * @author admin
  */
-public class FindKandM {
+public class Code04_FindKandM {
 
     /**
      * 最容易想到的方式，使用Map来存储

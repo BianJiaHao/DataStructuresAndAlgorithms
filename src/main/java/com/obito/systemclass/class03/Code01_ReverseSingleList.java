@@ -6,7 +6,7 @@ import java.util.List;
 /**
  * @author obito
  */
-public class ReverseSingleList {
+public class Code01_ReverseSingleList {
 
     public static class Node {
         private int value;

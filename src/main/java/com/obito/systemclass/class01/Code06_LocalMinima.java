@@ -3,7 +3,7 @@ package com.obito.systemclass.class01;
 /**
  * @author obito
  */
-public class LocalMinima {
+public class Code06_LocalMinima {
     // 6,3,4
     public static int localMinima(int[] arr) {
         if (arr == null || arr.length < 2) {

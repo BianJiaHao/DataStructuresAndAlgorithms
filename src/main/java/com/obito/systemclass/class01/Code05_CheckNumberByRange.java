@@ -3,7 +3,7 @@ package com.obito.systemclass.class01;
 /**
  * @author obtio
  */
-public class CheckNumberByRange {
+public class Code05_CheckNumberByRange {
 
     public static int checkNumberByRange(int[] arr,int t) {
         if (arr == null || arr.length < 2) {

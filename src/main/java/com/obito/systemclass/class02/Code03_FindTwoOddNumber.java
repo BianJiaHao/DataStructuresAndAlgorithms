@@ -3,7 +3,7 @@ package com.obito.systemclass.class02;
 /**
  * @author obito
  */
-public class FindTwoOddNumber {
+public class Code03_FindTwoOddNumber {
 
     public static void findTwoOddNumber(int[] arr) {
         if (arr == null || arr.length < 2) {

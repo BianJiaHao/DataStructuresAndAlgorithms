@@ -3,7 +3,7 @@ package com.obito.systemclass.class01;
 /**
  * @author obito
  */
-public class BubbleSort {
+public class Code02_BubbleSort {
 
     public static void bubbleSort(int[] arr) {
         if (arr == null || arr.length < 2) {

@@ -3,7 +3,7 @@ package com.obito.systemclass.class01;
 /**
  * @author obito
  */
-public class CheckNumberIsExists {
+public class Code04_CheckNumberIsExists {
 
     public static int checkNumberIsExists(int[] arr,int t) {
         if (arr == null || arr.length == 0) {

@@ -3,7 +3,7 @@ package com.obito.systemclass.class01;
 /**
  * @author obito
  */
-public class ChooseSort {
+public class Code01_ChooseSort {
 
     public static void chooseSort(int[] arr) {
         if (arr == null || arr.length < 2) {

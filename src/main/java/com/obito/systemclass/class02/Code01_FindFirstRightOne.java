@@ -3,7 +3,7 @@ package com.obito.systemclass.class02;
 /**
  * @author obito
  */
-public class FindFirstRightOne {
+public class Code01_FindFirstRightOne {
 
     public static int findFirstRightOne(int n) {
         if (n == 0) {
