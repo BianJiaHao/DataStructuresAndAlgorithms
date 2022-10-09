@@ -36,12 +36,36 @@ public class Code02_MergeSort {
         for (int i = 0; i < help.length; i++) {
             arr[l + i] = help[i];
         }
+    }
+
+    public static void mergeSort2(int[] arr) {
+        if (arr == null || arr.length < 2) {
+            return;
+        }
+        int length = arr.length;
+        int stepSize = 1;
+        while (stepSize < length) {
+            int l = 0;
+            while (l < length) {
+                if (stepSize > length - l) {
+                    break;
+                }
+                int m = l + stepSize - 1;
+                int r = m + Math.min(stepSize,length - m - 1);
+                merge(arr,m,l,r);
+                l = r + 1;
+            }
+            if (stepSize > length / 2) {
+                break;
+            }
+            stepSize <<= 1;
+        }
 
     }
 
     public static void main(String[] args) {
         int[] arr = new int[]{5,12,5,6,8,2,15};
-        mergeSort(arr);
+        mergeSort2(arr);
         for (int num : arr) {
             System.out.println(num);
         }
