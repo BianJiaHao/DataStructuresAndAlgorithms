@@ -42,25 +42,24 @@ public class Code02_MergeSort {
         if (arr == null || arr.length < 2) {
             return;
         }
-        int length = arr.length;
-        int stepSize = 1;
-        while (stepSize < length) {
+        int n = arr.length;
+        int mergeSize = 1;
+        while (mergeSize < n) {
             int l = 0;
-            while (l < length) {
-                if (stepSize > length - l) {
+            while (l < n) {
+                if (mergeSize > n - l) {
                     break;
                 }
-                int m = l + stepSize - 1;
-                int r = m + Math.min(stepSize,length - m - 1);
+                int m = l + mergeSize - 1;
+                int r = m + Math.min(mergeSize,n - m - 1);
                 merge(arr,m,l,r);
                 l = r + 1;
             }
-            if (stepSize > length / 2) {
+            if (mergeSize > n / 2) {
                 break;
             }
-            stepSize <<= 1;
+            mergeSize <<= 1;
         }
-
     }
 
     public static void main(String[] args) {
