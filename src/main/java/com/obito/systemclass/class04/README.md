@@ -4,3 +4,5 @@
    归并排序
 3. SmallSum
    小和问题
+4. ReversePair 
+   逆序对问题
