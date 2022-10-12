@@ -6,3 +6,5 @@
    小和问题
 4. ReversePair 
    逆序对问题
+5. BiggerRightTwice 
+   求一个数的右边有几个数的两倍都小于这个数
