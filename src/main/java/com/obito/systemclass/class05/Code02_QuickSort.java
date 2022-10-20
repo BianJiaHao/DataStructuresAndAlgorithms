@@ -194,7 +194,7 @@ public class Code02_QuickSort {
     public static void main(String[] args) {
         int maxValue = 1_0000;
         int maxSize = 1000;
-        int times = 1_0000;
+        int times = 10_0000;
         System.out.println("Test start");
         for (int i = 0; i < times; i++) {
             int[] arr1 = generateRandomArray(maxSize, maxValue);
