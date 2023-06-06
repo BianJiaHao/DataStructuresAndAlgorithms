@@ -1,5 +1,10 @@
 package com.obito.systemclass.class01;
 
+import java.util.Arrays;
+import java.util.Collections;
+import java.util.stream.Collector;
+import java.util.stream.Collectors;
+
 /**
  * @author obito
  */
@@ -7,11 +12,11 @@ public class Code01_ChooseSort {
 
     public static void chooseSort(int[] arr) {
         if (arr == null || arr.length < 2) {
-            // do nothings
+            // do nothing's
             return;
         }
-        int minIndex = 0;
         for (int i = 0; i < arr.length; i++) {
+            int minIndex = i;
             for (int j = i + 1; j < arr.length; j++) {
                 minIndex = arr[j] < arr[minIndex] ? j : minIndex;
             }
@@ -38,5 +43,6 @@ public class Code01_ChooseSort {
         for (int j : arr) {
             System.out.println(j);
         }
+        
     }
 }
