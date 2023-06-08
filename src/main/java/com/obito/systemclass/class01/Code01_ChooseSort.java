@@ -1,9 +1,8 @@
 package com.obito.systemclass.class01;
 
-import lombok.extern.log4j.Log4j;
 import lombok.extern.slf4j.Slf4j;
-
 import java.util.Arrays;
+import static com.obito.systemclass.utils.ArrayUtils.*;
 
 /**
  * @author obito
@@ -25,64 +24,14 @@ public class Code01_ChooseSort {
         }
 
     }
-
-    public static void swap(int[] arr,int a,int b) {
-        int tmp = arr[a];
-        arr[a] = arr[b];
-        arr[b] = tmp;
-    }
-
-    public static void swap2(int[] arr,int a,int b) {
-        arr[a] = arr[a] ^ arr[b];
-        arr[b] = arr[a] ^ arr[b];
-        arr[a] = arr[a] ^ arr[b];
-    }
     
-    public static int[] generateArray(int maxSize,int maxValue) {
-        int[] arr = new int[(int)((maxSize + 1) * Math.random())];
-        for (int i = 0; i < arr.length; i++) {
-            arr[i] = (int)(((maxValue + 1) * Math.random()) - ((maxValue) * Math.random()));
-        }
-        return arr;
-    }
-    
-    public static int[] copyArray(int[] arr) {
-        if (arr == null) {
-            return null;
-        }
-        int[] copy = new int[arr.length];
-        System.arraycopy(arr, 0, copy, 0, arr.length);
-        return copy;
-    }
-    
-    public static boolean isEqual(int[] arr1,int[] arr2) {
-        if ((arr1 == null && arr2 != null) || (arr1 != null && arr2 == null)) {
-            return false;
-        }
-        if (arr1 == null) {
-            return true;
-        }
-        if (arr1.length != arr2.length) {
-            return false;
-        }
-        boolean equal = true;
-        for (int i = 0; i < arr1.length; i++) {
-            if (arr1[i] != arr2[i]) {
-               equal = false;
-               break;
-            }
-        }
-        return equal;
-    }
-    
-
     public static void main(String[] args) {
         int testTimes = 1_0000;
         int maxSize = 1000;
         int maxValue = 1000;
         long start = System.currentTimeMillis();
         for (int i = 0; i < testTimes; i++) {
-            int[] array1 = generateArray(maxSize, maxValue);
+            int[] array1 = generateRandomArray(maxSize, maxValue);
             int[] array2 = copyArray(array1);
             
             Arrays.sort(array1);
