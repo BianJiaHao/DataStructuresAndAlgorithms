@@ -1,7 +1,4 @@
-package leetcode;
-
-import java.util.Arrays;
-import java.util.Collections;
+package com.obito.leetcode;
 
 /**
  * @author admin
