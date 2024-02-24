@@ -1,4 +1,4 @@
-package com.obito.brush;
+package com.obito.brush.class01;
 
 import com.obito.utils.ArrayUtil;
 import lombok.extern.slf4j.Slf4j;
