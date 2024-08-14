@@ -1,6 +1,4 @@
-package leetcode;
-
-import com.sun.deploy.util.StringUtils;
+package com.obito.leetcode;
 
 /**
  * @author admin

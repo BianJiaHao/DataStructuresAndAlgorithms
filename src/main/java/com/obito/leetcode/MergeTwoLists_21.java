@@ -1,4 +1,4 @@
-package leetcode;
+package com.obito.leetcode;
 
 /**
  * @author admin
